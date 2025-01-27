@@ -23,8 +23,8 @@ function Weather() {
         <>
             <div className="bg-[url(/Background_Image2.jpg)] bg-no-repeat bg-center bg-cover bg-center min-h-screen">
                 <div className="flex justify-center items-center items-center relative top-6" >
-                    <label className="text-2xl ml-1  font-bold font-bold ">City:</label>
-                    <input className="border-2 font-semibold  border-red-900 m-1  rounded-sm" type="text" value={City} onChange={(e) => setCity(e.target.value)} required />
+                    <label className="text-2xl   font-bold font-bold ">City:</label>
+                    <input className="border-2 font-semibold  border-red-900  rounded-sm" type="text" value={City} onChange={(e) => setCity(e.target.value)} required />
                     <button className="ml-1 bg-red-500 mr-1 border-slate-50 border-2 p-1 text-xl font-black rounded-md" onClick={FindCityWeather}>Search</button>
                 </div><br /><br />
 
