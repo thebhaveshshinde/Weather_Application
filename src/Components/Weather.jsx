@@ -34,14 +34,13 @@ function Weather() {
                             <div className=" relative m-4  sm:flex-col sm:flex sm:justify-center sm:items-center">
                                 <h1 className="text-6xl text-slate-50 font-bold"> {Weather.name}, {Weather.sys.country}</h1><br />
                                 <span>
-                                    <h2 className="text-5xl text-slate-50 font-bold">{Weather.main.temp}°C</h2>
+                                    <h2 className="text-5xl text-slate-50 font-bold">{Weather.main.temp}°C , {Weather.weather[0].description}</h2>
                                     <img className="h-60 w-60" src={`http://openweathermap.org/img/wn/${Weather.weather[0].icon}@2x.png`} />
                                 </span>
                             </div>
                             <div className="flex flex-col justify-center items-center w-screen text-center">
                                 <div className="bg-[url(/Background_Image4.jpg)]  bg-center bottom-6 absolute md:bottom-10  w-3/4 md:w-2/4 ">
                                     <h2 className="text-slate-800 font-bold text-2xl">Feels Like: {Weather.main.feels_like}°C</h2>
-                                    <h2 className="text-slate-800 font-bold text-2xl">Condition: {Weather.weather[0].description}</h2>
                                     <h2 className="text-slate-800 font-bold text-2xl">Humidity: {Weather.main.humidity}%</h2>
                                     <h2 className="text-slate-800 font-bold text-2xl">Visibility:{Weather.visibility / 1000}km.</h2>
                                 </div>
